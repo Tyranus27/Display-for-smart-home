@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <title>Input Handling</title>
+</head>
+<body>
+    <div id="results"></div>
+    <script>
+        var urlSearch = new URLSearchParams(window.location.search);
+        var xhttp = new XMLHttpRequest();
+
+        if(urlSearch.has("gmt")){
+            xhttp.open("GET", "timezonechange"+window.location.search, true);
+            xhttp.send();
+        }
+        else if(urlSearch.has("seconds" || "minutes" || "hours")){
+            if(urlSearch.get("hours") == "24"){    
+            xhttp.open("GET", "countdowninput?seconds=0&minutes=0&hours=24&countdownMsg="+urlSearch.get("countdownMsg"), true);
+            xhttp.send();
+         
+        }
+            else {
+            xhttp.open("GET", "countdowninput"+window.location.search, true);
+            xhttp.send();
+            }
+        }
+        else if (urlSearch.has("feed")){
+            xhttp.open("GET", "changefeed"+window.location.search, true);
+            xhttp.send();
+        }
+        else if (urlSearch.has("msg")){
+            if(urlSearch.has("large")){
+                xhttp.open("GET", "custommessage"+window.location.search, true);
+            xhttp.send();
+            }
+            else{
+                xhttp.open("GET", "custommessage"+window.location.search, true);
+            xhttp.send();
+            
+            }
+        }
+        else if (urlSearch.has("large")){
+            xhttp.open("GET", "custommessage"+window.location.search, true);
+            xhttp.send();
+        }
+        else if (urlSearch.has("city") && urlSearch.has("countrycode")){
+            xhttp.open("GET", "weatherlocation"+window.location.search, true);
+            xhttp.send();
+        }
+
+        window.location.href = '/';   
+
+    </script>
+</body>
+</html>
+
+
+

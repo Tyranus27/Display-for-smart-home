@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type ="text/css" href="stylesheet.css">
+    <script src="scripts.js"></script>
+    <title>IoT Smart Display Control Web Server</title>
+    </head>
+    <body>
+        <h2>Control Web Server</h2>
+        <br>
+        <div class = "border">   
+        <p2>Set the countdown timer </p2><br><br>
+            <form action = "inputHandler.html" method="get">
+                <label for="seconds">S: </label>
+            <select name="seconds" id="seconds">
+            <option value="0">0</option> 
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="6">6</option> 
+            <option value="7">7</option> 
+            <option value="8">8</option> 
+            <option value="9">9</option> 
+            <option value="10">10</option> 
+            <option value="11">11</option> 
+            <option value="12">12</option> 
+            <option value="13">13</option> 
+            <option value="14">14</option> 
+            <option value="15">15</option> 
+            <option value="16">16</option> 
+            <option value="17">17</option> 
+            <option value="18">18</option> 
+            <option value="19">19</option> 
+            <option value="20">20</option> 
+            <option value="21">21</option> 
+            <option value="22">22</option> 
+            <option value="23">23</option> 
+            <option value="24">24</option> 
+            <option value="25">25</option> 
+            <option value="26">26</option> 
+            <option value="27">27</option> 
+            <option value="28">28</option> 
+            <option value="29">29</option> 
+            <option value="30">30</option> 
+            <option value="31">31</option> 
+            <option value="32">32</option> 
+            <option value="33">33</option> 
+            <option value="34">34</option> 
+            <option value="35">35</option> 
+            <option value="36">36</option> 
+            <option value="37">37</option> 
+            <option value="38">38</option> 
+            <option value="39">39</option> 
+            <option value="40">40</option> 
+            <option value="41">41</option> 
+            <option value="42">42</option> 
+            <option value="43">43</option> 
+            <option value="44">44</option> 
+            <option value="45">45</option> 
+            <option value="46">46</option> 
+            <option value="47">47</option> 
+            <option value="48">48</option> 
+            <option value="49">49</option> 
+            <option value="50">50</option> 
+            <option value="51">51</option> 
+            <option value="52">52</option> 
+            <option value="53">53</option> 
+            <option value="54">54</option> 
+            <option value="55">55</option> 
+            <option value="56">56</option> 
+            <option value="57">57</option> 
+            <option value="58">58</option> 
+            <option value="59">59</option>    
+        </select>
+                
+            <label for="minutes">M: </label>
+            <select name="minutes" id="minutes">
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option> 
+                <option value="13">13</option> 
+                <option value="14">14</option> 
+                <option value="15">15</option> 
+                <option value="16">16</option> 
+                <option value="17">17</option> 
+                <option value="18">18</option> 
+                <option value="19">19</option> 
+                <option value="20">20</option> 
+                <option value="21">21</option> 
+                <option value="22">22</option> 
+                <option value="23">23</option> 
+                <option value="24">24</option> 
+                <option value="25">25</option> 
+                <option value="26">26</option> 
+                <option value="27">27</option> 
+                <option value="28">28</option> 
+                <option value="29">29</option> 
+                <option value="30">30</option> 
+                <option value="31">31</option> 
+                <option value="32">32</option> 
+                <option value="33">33</option> 
+                <option value="34">34</option> 
+                <option value="35">35</option> 
+                <option value="36">36</option> 
+                <option value="37">37</option> 
+                <option value="38">38</option> 
+                <option value="39">39</option> 
+                <option value="40">40</option> 
+                <option value="41">41</option> 
+                <option value="42">42</option> 
+                <option value="43">43</option> 
+                <option value="44">44</option> 
+                <option value="45">45</option> 
+                <option value="46">46</option> 
+                <option value="47">47</option> 
+                <option value="48">48</option> 
+                <option value="49">49</option> 
+                <option value="50">50</option> 
+                <option value="51">51</option> 
+                <option value="52">52</option> 
+                <option value="53">53</option> 
+                <option value="54">54</option> 
+                <option value="55">55</option> 
+                <option value="56">56</option> 
+                <option value="57">57</option> 
+                <option value="58">58</option> 
+                <option value="59">59</option>    
+            </select> 
+
+            <label for="hours">H: </label>
+            <select name="hours" id="hours">
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option> 
+                <option value="13">13</option> 
+                <option value="14">14</option> 
+                <option value="15">15</option> 
+                <option value="16">16</option> 
+                <option value="17">17</option> 
+                <option value="18">18</option> 
+                <option value="19">19</option> 
+                <option value="20">20</option> 
+                <option value="21">21</option> 
+                <option value="22">22</option> 
+                <option value="23">23</option>   
+                <option value="24">24</option>
+            </select><br><br>
+
+            
+                <label for="countdownMsg">Countdown message (optional):</label>
+                <input type="text" name="countdownMsg" id="countdownMsg">
+           
+               
+                <br><br>
+                <input type="submit" value="Start the timer">         
+            </form>
+        </div>
+        <div>
+            <br>
+            <div class="border">
+            <form action="inputHandler.html" method="get">               
+                    <p2>Select the time zone</p2><br><br>
+                    <label for="timezone"></label>
+                    <select name="gmt" id="gmt" class="gmt" required>
+                        <option value="0">--select time zone--</option>
+                        <option value="-12">(UTC-12:00) International Date Line West
+                            Dateline Standard Time</option>
+                        <option value="-11">(UTC-11:00) Co-ordinated Universal Time-11
+                            UTC-11</option>
+                        <option value="-10">(UTC-10:00) Hawaii
+                            Hawaiian Standard Time</option>
+                        <option value="-9">(UTC-09:00) Co-ordinated Universal Time-09
+                            UTC-09</option>
+                        <option value="-8">(UTC-08:00) Co-ordinated Universal Time-08
+                            UTC-08</option>
+                        <option value="-7">(UTC-07:00) Mountain Time (US & Canada)
+                            Mountain Standard Time</option>
+                        <option value="-6">(UTC-06:00) Central Time (US & Canada)
+                            Central Standard Time</option>
+                        <option value="-5">(UTC-05:00) Eastern Time (US & Canada)
+                            Eastern Standard Time</option>
+                        <option value="-4">
+                            (UTC-04:00) Atlantic Time (Canada)
+                            Atlantic Standard Time</option>
+                        <option value="-3">(UTC-03:00) City of Buenos Aires
+                            Argentina Standard Time</option>
+                        <option value="-2">(UTC-02:00) Co-ordinated Universal Time-02
+                            UTC-02</option>
+                        <option value="-1">
+                            (UTC-01:00) Azores
+                            Azores Standard Time
+                            </option>
+                        <option value="0">(UTC+00:00) Dublin, Edinburgh, Lisbon, London
+                            GMT Standard Time
+                            </option>
+                        <option value="1">(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+                            Central European Standard Time</option>
+                        <option value="2">(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius
+                            FLE Standard Time</option>
+                        <option value="3">
+                            (UTC+03:00) Moscow, St Petersburg
+                            Russian Standard Time</option>
+                        <option value="4">
+                            (UTC+04:00) Baku
+                            Azerbaijan Standard Time</option>
+                        <option value="5">(UTC+05:00) Ashgabat, Tashkent
+                            West Asia Standard Time
+                            </option>
+                        <option value="6">(UTC+06:00) Astana
+                            Central Asia Standard Time</option>
+                        <option value="7">(UTC+07:00) Bangkok, Hanoi, Jakarta
+                            SE Asia Standard Time</option>
+                        <option value="8">(UTC+08:00) Beijing, Chongqing, Hong Kong SAR, Urumqi
+                            China Standard Time</option>
+                        <option value="9">
+                            (UTC+09:00) Osaka, Sapporo, Tokyo
+                            Tokyo Standard Time</option>
+                        <option value="10">(UTC+10:00) Guam, Port Moresby
+                            West Pacific Standard Time</option>
+                        <option value="11">
+                            (UTC+11:00) Solomon Is., New Caledonia
+                            Central Pacific Standard Time</option>
+                        <option value="12">
+                            (UTC+12:00) Co-ordinated Universal Time+12
+                            UTC+12</option>
+                        <option value="13">(UTC+13:00) Co-ordinated Universal Time+13
+                            UTC+13</option>
+                        <option value="14">(UTC+14:00) Kiritimati Island
+                            Line Islands Standard Time</option>
+                    </select><br><br>
+                     
+                
+                <input type="submit" value="Select time zone"> 
+            </form>
+        </div><br><br>
+        <div class="border">
+            <p2>Select the news feed</p2><br><br>
+            <form action="inputHandler.html" method="get">
+            
+                <label for="feed">News feed:</label>
+                <select name="feed" id="feed" required>
+                    <option value="">--select news feed--</option>
+                    <option value="science_and_environment">Science & Environment</option>
+                    <option value="world">World</option>
+                    <option value="uk">UK</option>
+                    <option value="wales">Wales</option>
+                    <option value="business">Business</option>
+                    <option value="politics">Politics</option>
+                    <option value="health">Helath</option>
+                    <option value="technology">Technology</option>
+                </select><br><br>
+                <input type="submit" value="Select feed"> 
+            </form>
+            </div><br>
+            <div class="border">
+                <p2>Set the custom message</p2><br><br>
+       
+                <form action="inputHandler.html" method="get">
+    
+                <label for="msg">Custom message:</label>
+                <input type="text" name="msg" id="msg" required><br><br>
+                <label for="large"> Large text:</label>
+                <input type="checkbox" name="large" id="large"><br><br>
+                <input type="submit" value="Set message"> 
+            
+        </form></div><br>
+
+        <div class="border">
+            
+            <p2>Set the weather location</p2><br><br>
+            <form action="inputHandler.html" method="get">
+            
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" required><br><br>
+                <label for="countrycode">Country code:</label>
+                <input type="text" name="countrycode" id="countrycode" required> <br><br>
+                <input type="submit" value="Set weather location"> 
+            
+        </form></div>
+
+        <div><br><br><br>
+        <button id="previous" class="buttonPrevious" onclick="changeActivity(this)">Previous activity</button>
+        <button id="next" class="buttonNext" onclick="changeActivity(this)">Next activity</button>
+        </div><br><br>
+    </body>
+</html>
+

@@ -1,0 +1,67 @@
+html {font-family: Arial;
+      display: inline-block;
+      text-align: center;
+    }
+h2 {font-size: 2.5rem;
+text-align: center;}
+body {max-width: 1000px;
+      margin:0px auto;
+      padding-bottom: 25px;
+      background-color: white;
+      
+    }
+p1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  
+}
+p2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+
+}
+
+.border {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-width:2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  width: auto;
+  margin: 0px auto;
+  background-color: #F5F5F5;
+  box-shadow: 5px 5px #929292;
+  }
+
+.buttonNext {
+  float: right;
+  border-width:2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin: 0px auto;
+  width: 300pvh;
+  background-color: #F5F5F5;
+  box-shadow: 5px 5px #929292;
+}
+.buttonPrevious {
+  float: left;
+  border-width:2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  margin: 0px auto;
+  width: 300pvh;
+  background-color: #F5F5F5;
+  box-shadow: 5px 5px #929292;
+}
+
+.gmt {
+  width: auto;
+}
